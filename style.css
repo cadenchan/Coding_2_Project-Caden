@@ -5,31 +5,49 @@
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
-  }
-  
-  @-webkit-keyframes glow {
+}
+
+@-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b2b7bf, 0 0 40px #b2b7bf, 0 0 50px #b2b7bf, 0 0 60px #b2b7bf, 0 0 70px #b2b7bf;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b2b7bf, 0 0 40px #b2b7bf, 0 0 50px #b2b7bf, 0 0 60px #b2b7bf, 0 0 70px #b2b7bf;
     }
+
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #c2c7cf, 0 0 40px #c2c7cf, 0 0 50px #c2c7cf, 0 0 60px #c2c7cf, 0 0 70px #c2c7cf, 0 0 80px #c2c7cf;
+        text-shadow: 0 0 20px #fff, 0 0 30px #c2c7cf, 0 0 40px #c2c7cf, 0 0 50px #c2c7cf, 0 0 60px #c2c7cf, 0 0 70px #c2c7cf, 0 0 80px #c2c7cf;
     }
-  }
-  .header{
-    background-color:#EFDEDE ;
-  }
-  .sun{
-    background-image:url(images\sunshine.jpeg);
-  }
-  .text{
+}
+
+.header {
+    background-color: #EFDEDE;
+}
+
+.sun {
+    background-image: url(images\sunshine.jpeg);
+}
+
+.text {
     background-color: #ECE6F0;
-  }
-  .first{
-    height: 425px;border-style:
-  }
-  .second{
+}
+
+.first {
     height: 425px;
-  }
-  .chat{
+    border-style:
+}
+
+.second {
+    height: 425px;
+}
+
+.chat {
     text-align: left;
-  }
+}
+
+.rb-in-your-bag {
+    background: none !important;
+    border: 1px solid #e2e2e5;
+    width: 100%;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #1f1f24;
+}
