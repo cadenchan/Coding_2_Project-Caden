@@ -20,12 +20,41 @@
 .header {
     background-color: #EFDEDE;
 }
-
-.sun {
-    background-image: url(images\sunshine.jpeg);
+.shop{
+    margin-top: 100px;margin-left: 700px;
 }
-
+.padd{
+    padding-top: 75px;
+}
+.first{
+    margin-top: 50px;
+}
+.intro{
+    padding-top: 20px;
+}
+.front-link{
+    color: #65558F;
+}
+.ad{
+    text-align: left;
+}
+.sun {
+        background-image: url(img/sunshine.jpeg);
+        height: 425px;
+        width: 100%;
+        background-size: cover;
+        background-position: center; 
+}
+.indulge{
+    text-decoration: underline;margin-top: 50px;
+}
+.show{
+}
+.glass{
+    height:225px;
+}
 .text {
+    font-family:OpsisClassical;
     background-color: #ECE6F0;
 }
 
@@ -39,9 +68,13 @@
 }
 
 .chat {
-    text-align: left;
+    text-align: left;padding-top:;
 }
 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
 .rb-in-your-bag {
     background: none !important;
     border: 1px solid #e2e2e5;
@@ -51,3 +84,128 @@
     margin-bottom: 20px;
     color: #1f1f24;
 }
+.wcs-text-decoration-underline {
+    text-decoration: underline;
+}
+
+.wcs-hide {
+    display: none !important;
+}
+.wcs-icon-right-arrow {
+    background-position: 7px -300px;
+}
+.wcs-icon {
+    background: url(../images/spritesheet.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    top: 0;
+    position: absolute;
+    right: 0;
+}
+.odr-body {
+    padding: 19px 20px;
+    font-weight: normal;
+}
+.each-item-wrapper {
+    display: flex; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    flex-direction: column-reverse;
+}
+.rb-nw-product-loop {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.promobar {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+img.wcs-main-image {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+.wcs-delivery-shopping-cart-accordian img {
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.wcs-product-name {
+    display: inline;
+    font-weight: 500;
+    line-height: 1.14;
+    font-size: 14px;
+}
+.rb-nw-del {
+    display: none !important;
+}
+.wcs-price {
+    text-transform: none !important;
+}
+.wcs-marRt-0 {
+    margin-right: 0 !important;
+}
+.wcs-right {
+    float: right !important;
+}
+.wcs-clearboth {
+    clear: both;
+}
+.wcs-product-no {
+    margin: 5px 0 10px;
+    font-size: 13px;
+    line-height: 1.58;
+    display: inline-block;
+}
+.wcs-quantity {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.58;
+    text-transform: capitalize;
+}
+.rb-nw-product-price {
+    font-size: 13px;
+    line-height: 1.58;
+}
+.delivery-title-info {
+    font-size: 13px;
+    line-height: 1.58;
+    font-weight: 300;
+    border-bottom: 1px solid #e2e2e5;
+    padding: 0 0 20px;
+    margin-bottom: 20px;
+}
+.date-wrapper {
+    color: #1c8846;
+}
+.delivery-title-info-accent {
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'OpsisClassical';  
+    src: url('../fonts/Polaris.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+    background: rg
+    text-transform: uppercase;b(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(222,200,213,1) 100%) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .nav {
+    font-family:OpsisClassical;
+    background-color: #ECE6F0;
+  }
