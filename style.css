@@ -195,17 +195,41 @@ img {
     font-weight: normal;
     font-style: normal;
 }
-
-body { 
+.nav {
+    font-family:OpsisClassical;
+    background-color: #ECE6F0;
+}
+.cover_page{
+    background: url(img/MorantusJpegus.png) no-repeat;
+    background-size: cover;
+}
+.gradient{
     background: rg
     text-transform: uppercase;b(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(222,200,213,1) 100%) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-  }
-  .nav {
-    font-family:OpsisClassical;
-    background-color: #ECE6F0;
-  }
+    background-size::cover
+}
+.fashion{
+    text-align: left; color:#FFFFFF;font-family:'Times New Roman', Times, serif
+}
+a:hover{
+ color: rgb(235, 112, 186);
+}
+
+/* Payment.html */
+.bi-check2 {
+    color: #1c8846;
+}
+.navbar-brand {
+    font-family: 'OpsisClassical', sans-serif; /* Fallback font */
+  background: rgb(177,174,174);
+  background: linear-gradient(180deg, rgba(177,174,174,1) 0%, rgba(200,198,198,1) 19%, rgba(255,255,255,1) 32%, rgba(226,225,225,1) 42%, rgba(210,208,208,1) 54%, rgba(255,255,255,1) 60%, rgba(222,220,220,1) 72%, rgba(255,255,255,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
