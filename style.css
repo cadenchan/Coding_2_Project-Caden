@@ -223,6 +223,10 @@ a:hover{
 .bi-check2 {
     color: #1c8846;
 }
+.link-dark:hover {
+    color: rgb(235, 112, 186) !important;
+}
+
 .navbar-brand {
     font-family: 'OpsisClassical', sans-serif; /* Fallback font */
   background: rgb(177,174,174);
@@ -232,4 +236,7 @@ a:hover{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+}
+.cookie{
+    text-align: left; padding-left: 50px;padding-right: 50px;
 }
