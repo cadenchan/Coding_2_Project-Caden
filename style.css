@@ -16,7 +16,9 @@
         text-shadow: 0 0 20px #fff, 0 0 30px #c2c7cf, 0 0 40px #c2c7cf, 0 0 50px #c2c7cf, 0 0 60px #c2c7cf, 0 0 70px #c2c7cf, 0 0 80px #c2c7cf;
     }
 }
-
+.fashion_link:hover{
+    text-decoration:none;
+}
 .header {
     background-color: #EFDEDE;
 }
@@ -30,10 +32,10 @@
     margin-top: 50px;
 }
 .intro{
-    padding-top: 20px;
+    padding-top: 20px; color:rgba(58, 186, 92) 
 }
 .front-link{
-    color: #65558F;
+    color:rgba(58, 186, 92) ;
 }
 .ad{
     text-align: left;
@@ -44,12 +46,22 @@
         width: 100%;
         background-size: cover;
         background-position: center; 
+        border-style: solid;
+        border-width: 8px;
+        border-color: #1f1f24;
+}
+.main_box{
+    
 }
 .indulge{
-    text-decoration: underline;margin-top: 50px;
+    text-decoration: underline;
+     background: linear-gradient(180deg, rgba(0,0,0) 0%, rgba(84, 84, 84) 100%);
+     -webkit-background-clip: text;
+     color: transparent;
+     display: inline-block;
+     margin-top: 50px;
 }
-.show{
-}
+
 .glass{
     height:225px;
 }
@@ -65,10 +77,11 @@
 
 .second {
     height: 425px;
+    background-color:black;
 }
 
 .chat {
-    text-align: left;padding-top:;
+    text-align: center;color: rgba(58, 186, 92) ;
 }
 
 div {
@@ -206,17 +219,21 @@ img {
 .gradient{
     background: rg
     text-transform: uppercase;b(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(222,200,213,1) 100%) no-repeat center center fixed; 
+    background: linear-gradient(180deg, rgba(73, 237, 57) 0%, rgba(6, 71, 0) 100%) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size::cover
 }
 .fashion{
-    text-align: left; color:#FFFFFF;font-family:'Times New Roman', Times, serif
+    text-align: left; color:#FFFFFF;font-family:'Times New Roman', Times, serif;
+    background: linear-gradient(180deg, rgba(46, 150, 36) 0%, rgba(58, 186, 92) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
 }
 a:hover{
- color: rgb(235, 112, 186);
+ color: rgb(122, 245, 155);
 }
 
 /* Payment.html */

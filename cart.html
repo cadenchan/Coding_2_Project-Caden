@@ -35,7 +35,8 @@
         <h4>Select shipping method</h4>
     </div>
     <div class="row">
-        <div class="col-9">
+        <div class="col-1"></div>
+        <div class="col-6">
             <div class="card">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
@@ -54,15 +55,24 @@
                 <form class="card-body tab-content">
                     <div class="tab-pane active" id="standard">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Default checkbox
+                            <input class="form-check-input" type="checkbox" name="exclusiveCheckbox" id="checkbox1" onclick="toggleCheckbox(this)">
+                            <label class="form-check-label" for="checkbox1">
+                                <h5>RESPONSIBLE SHIPPING</h5>
+                            </label>
+                            <p>We’ll ship with logistics providers using solutions to reduce emmisions.</p>
+                        </div>
+                    
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="exclusiveCheckbox" id="checkbox2" onclick="toggleCheckbox(this)">
+                            <label class="form-check-label" for="checkbox2">
+                                <h5>USPS PO Box Only</h5>
                             </label>
                         </div>
+                    
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Checked checkbox
+                            <input class="form-check-input" type="checkbox" name="exclusiveCheckbox" id="checkbox3" onclick="toggleCheckbox(this)">
+                            <label class="form-check-label" for="checkbox3">
+                                <h5>Military APO/FPO</h5>
                             </label>
                         </div>
                     </div>
@@ -74,14 +84,56 @@
                     </div>
                 </form>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Product Details</h5>
+                    </div>
+                    <div class="col">
+                        <h5>Gift Wrap</h5>
+                    </div>
+                    <div class="col">
+                        <h5>Quantity</h5>
+                    </div>
+                    <div class="col">
+                        <h5>Price</h5>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-3">
+            <div class="card mb-4">
+                <div class="card-header py-3">
+                    <h5 class="mb-0">Summary</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                            Products
+                            <span>$53.98</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Shipping
+                            <span>Gratis</span>
+                        </li>
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                            <div>
+                                <strong>Total amount</strong>
+                            </div>
+                            <span><strong>$53.98</strong></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <a href="delivery.html">
                 <button type="button" class="btn btn-dark">Checkout</button>
             </a>
 
         </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
