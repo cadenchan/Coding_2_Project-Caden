@@ -39,7 +39,7 @@
 
     <div class="container">
         <div class="image-container">
-            <img id="glassesImage" src="/images/black-round.png" alt="Selected Glasses">
+            <img id="glassesImage" src="img/vegas_gaze_incognito.jpg" alt="Selected Glasses">
         </div>
         <div class="options-container">
             <h1>Customize Your Opsis AI Glasses</h1>
@@ -49,15 +49,9 @@
                 <div id="color-options"></div>
             </div>
             
-            <div class="option-section">
-                <h2>Select Frame Type</h2>
-                <div id="frame-options"></div>
-            </div>
-            
             <div>
                 <h2>Your Selection:</h2>
                 <p>Color: <span id="selectedColor">Black</span></p>
-                <p>Frame: <span id="selectedFrame">Round</span></p>
             </div>
             
             <div class="option-section">
@@ -71,57 +65,41 @@
 
     <script>
         const colors = ["Black", "White", "Silver", "Blue", "Red"];
-        const frames = ["Round", "Square", "Aviator", "Rimless"];
         const imageMap = {
-            Black: { Round: "/images/black-round.png", Square: "/images/black-square.png", Aviator: "/images/black-aviator.png", Rimless: "/images/black-rimless.png" },
-            White: { Round: "/images/white-round.png", Square: "/images/white-square.png", Aviator: "/images/white-aviator.png", Rimless: "/images/white-rimless.png" },
-            Silver: { Round: "/images/silver-round.png", Square: "/images/silver-square.png", Aviator: "/images/silver-aviator.png", Rimless: "/images/silver-rimless.png" },
-            Blue: { Round: "/images/blue-round.png", Square: "/images/blue-square.png", Aviator: "/images/blue-aviator.png", Rimless: "/images/blue-rimless.png" },
-            Red: { Round: "/images/red-round.png", Square: "/images/red-square.png", Aviator: "/images/red-aviator.png", Rimless: "/images/red-rimless.png" }
-        };
-        
-        const priceMap = {
-            Round: 199,
-            Square: 209,
-            Aviator: 229,
-            Rimless: 249
+            Black: "img/vegas_gaze_incognito.jpg",
+            White: "/images/white-round.png",
+            Silver: "/images/silver-round.png",
+            Blue: "/images/blue-round.png",
+            Red: "/images/red-round.png"
         };
 
         let selectedColor = "Black";
-        let selectedFrame = "Round";
 
         function updateImage() {
-            document.getElementById("glassesImage").src = imageMap[selectedColor][selectedFrame];
+            document.getElementById("glassesImage").src = imageMap[selectedColor];
             document.getElementById("selectedColor").innerText = selectedColor;
-            document.getElementById("selectedFrame").innerText = selectedFrame;
-            document.getElementById("selectedPrice").innerText = priceMap[selectedFrame];
         }
 
-        function renderOptions(options, containerId, type) {
+        function renderOptions(options, containerId) {
             const container = document.getElementById(containerId);
             options.forEach(option => {
                 const button = document.createElement("button");
                 button.innerText = option;
                 button.classList.add("button");
-                if (option === (type === "color" ? selectedColor : selectedFrame)) {
+                if (option === selectedColor) {
                     button.classList.add("selected");
                 }
                 button.addEventListener("click", () => {
                     document.querySelectorAll(`#${containerId} .button`).forEach(btn => btn.classList.remove("selected"));
                     button.classList.add("selected");
-                    if (type === "color") {
-                        selectedColor = option;
-                    } else {
-                        selectedFrame = option;
-                    }
+                    selectedColor = option;
                     updateImage();
                 });
                 container.appendChild(button);
             });
         }
 
-        renderOptions(colors, "color-options", "color");
-        renderOptions(frames, "frame-options", "frame");
+        renderOptions(colors, "color-options");
     </script>
 </body>
 </html>
