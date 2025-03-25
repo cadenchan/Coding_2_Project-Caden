@@ -5,3 +5,10 @@ function toggleCheckbox(selectedCheckbox) {
         }
     });
 }
+document.querySelector('.dropdown').addEventListener('mouseenter', function() {
+    this.classList.add('active');
+  });
+  
+  document.querySelector('.dropdown').addEventListener('mouseleave', function() {
+    this.classList.remove('active');
+  });
