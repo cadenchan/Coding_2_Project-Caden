@@ -104,7 +104,7 @@ div {
     unicode-bidi: isolate;
 }
 .rb-in-your-bag {
-    background: none !important;
+    
     border: 1px solid #e2e2e5;
     width: 100%;
     padding: 0;
@@ -156,10 +156,7 @@ img.wcs-main-image {
     height: auto;
     float: left;
 }
-.wcs-delivery-shopping-cart-accordian img {
-    display: block;
-    margin: 0 auto;
-}
+
 
 img {
     overflow-clip-margin: content-box;
